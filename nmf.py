@@ -4,14 +4,6 @@ import math
 import random
 
 
-def get_rid_of_zeros(m):
-    for i in range(len(m)):
-        for j in range(len(m[i])):
-            if m[i, j] == 0:
-                m[i, j] += 10 ** -9
-    return m
-
-
 def difcost(a, b):
     diff = a - b
     dist = math.sqrt(mean(square(diff)))
